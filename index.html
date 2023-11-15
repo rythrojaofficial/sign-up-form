@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Teko">
+</head>
+<body>
+    
+    <div class="flex-container">
+        <div id="left-side">
+            <div id="img-wrapper">
+                <img src="./sign-up-form/Tricking-2.webp" alt="Tricking-2">
+                <div class="learn-tricking">
+                    <img src="./sign-up-form/aerial.png" alt="">
+                    <p>Learn Tricking today </p>
+                    <img src="./sign-up-form/aerial.png" alt="">
+                    
+                </div>
+                <div class="credit">
+                    <p>Photo by Brendan Morrison at NEO X</p>
+                </div>
+            </div>    
+            
+        </div>
+
+        <div id="right-side">
+            <div class="info-container">
+                <p>Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed 
+                    do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim 
+                    veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                    </p>
+                <p>You <i>know</i> you want to.</p>
+            </div>
+            <form action="/submit_page.php" method="get" class="my-form">
+                <fieldset class="fields">
+                    <label for="name-first">First Name</label>
+                    <input type="text" 
+                    id="name-first" name="name-first"
+                    pattern="[a-zA-Z]{2,20}" 
+                    required>
+
+                    <label for="name-last">Last Name</label>
+                    <input type="text" 
+                    id="name-last" name="name-last"
+                    pattern="[a-zA-Z]{2,20}">
+                
+                    <label for="email">email</label>
+                    <input type="email" 
+                    id="email" name="email" 
+                    pattern="[a-zA-Z]{2,20}"
+                    required>
+
+                    <label for="phone">Phone number</label>
+                    <input type="number" id="phone" name="phone" 
+                    pattern="{7,12}"
+                    required>
+                    
+                    <label for="user-password">password</label>
+                    <input type="password" 
+                    id="user-password" name="user-password" 
+                    pattern="{5,20}"
+                    required>
+
+                    <label for="confirm-password">confirm password</label>
+                    <input type="password" 
+                    id="confirm-password" name="confirm-password" 
+                    required>
+                
+                    <input type="submit" value="submit" id="submit">
+                </fieldset>
+
+            </form>
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>

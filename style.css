@@ -1,0 +1,131 @@
+
+
+*{
+    box-sizing: border-box;
+}
+:root {
+    --form-color: rgb(239, 249, 250);
+    --input-color: rgb(243, 242, 231);
+    --background-color: rgb(200, 180, 224);
+    --aqua: rgb(183, 230, 214)
+}
+body{
+    margin:0px;
+    padding: 0px;
+}
+
+.container{
+}
+
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    border-radius: 3rem;
+}
+#img-wrapper{  
+    height: 100%;
+    background-size: contain;
+    vertical-align: bottom;
+    min-width: 60vh;
+    
+    
+}
+
+#left-side{
+    background-color: var(--aqua);
+    position: relative;
+    flex: 1;
+}
+    .credit{
+        padding: .25rem;
+        background-color: rgba(0, 0, 0, 0.6);  
+        position: absolute;
+        bottom: 4vh;
+        right: 4vh;
+        border-radius: 0.5rem;
+        font-size: smaller;
+        
+    }
+    .credit > p{
+        color: rgb(185, 185, 87);
+    }
+
+.learn-tricking{
+    font-family: 'Teko';
+    display:flex;
+    position: absolute;
+    top: 50vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);  
+    color: white;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    flex:auto
+    
+    
+    }
+    .learn-tricking img{
+        height: 50%;
+        width: auto;
+        filter:invert();
+
+    }
+    
+#right-side{
+    padding: 3rem;
+    flex:1;
+    height: 100vh;;
+    background-color: var(--background-color);
+   
+}
+form{
+    
+}
+.fields{
+    border: none;
+    border-radius: .5rem;
+    display: grid;
+    grid-auto-flow: row;
+    gap: .5em;
+    background-color: var(--form-color);
+    padding:1.5rem;
+}
+label{
+    font-weight: bold;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+}
+
+
+input{
+    border-radius: .25rem;
+    padding: .2rem;
+    background-color: var(--input-color);
+}
+input:invalid{
+    border: 2px solid rgb(201, 152, 152);
+}
+#submit{
+    width: 30%;
+    padding: .5rem;
+    background-color: var(--aqua);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+    #submit:hover{
+        background-color: var(--background-color);
+        color: white;
+}
+
+.info-container{
+}
